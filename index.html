@@ -208,7 +208,7 @@
         .hero-tagline {
             font-size: 1rem;
             color: var(--crt-mid-gray);
-            max-width: 550px;
+            max-width: 650px;
             line-height: 1.7;
             margin-top: 1rem;
             opacity: 0;
@@ -282,7 +282,7 @@
         }
 
         .about-container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
@@ -329,13 +329,13 @@
             font-size: 1.05rem;
             line-height: 1.8;
             color: var(--crt-mid-gray);
-            max-width: 700px;
+            max-width: 780px;
             margin: 0 auto;
         }
 
         .about-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -374,7 +374,7 @@
             font-size: 0.95rem;
             border-bottom: 1px solid rgba(255,255,255,0.05);
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 0.5rem;
         }
 
@@ -386,6 +386,7 @@
             content: '>';
             color: var(--crt-dark-gray);
             font-weight: bold;
+            margin-top: 2px;
         }
 
         /* Project Showcase */
@@ -621,6 +622,48 @@
             font-size: 1rem;
             color: var(--crt-white);
             word-break: break-all;
+        }
+
+        .cta-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px dashed var(--crt-mid-gray);
+            padding: 2.5rem 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .cta-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            color: var(--crt-white);
+            margin-bottom: 1rem;
+        }
+
+        .cta-text {
+            color: var(--crt-mid-gray);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            background: var(--crt-light-gray);
+            color: var(--crt-black);
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 0.08em;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid var(--crt-white);
+        }
+
+        .cta-button:hover {
+            background: var(--crt-white);
+            transform: scale(1.04);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
         }
 
         /* Timeline */
@@ -1188,8 +1231,8 @@
                     <h1 class="hero-title">PORTFOLIO</h1>
                     <p class="hero-subtitle">:: YOUNG INNOVATOR & BUILDER ::</p>
                     <p class="hero-tagline">
-                        From Scratch blocks at age 7 to building sophisticated AI platforms at 13.
-                        A journey through code, creativity, and pushing boundaries.
+                        From Scratch blocks at age 7 to building sophisticated AI platforms and fine-tuning LLMs at 13.
+                        Presidential Scholar, accelerated mathematician, and builder pushing technical boundaries.
                         <br><br>
                         Current Focus: <strong style="color: var(--crt-white);">CRISTOL</strong> - Advanced Narrative Terminal
                     </p>
@@ -1213,21 +1256,32 @@
                             
                             <p class="about-bio">
                                 A passionate builder who started coding at age 7 and hasn't stopped since.
-                                I believe in creating tools that help people tell better stories together.
-                                Currently building CRISTOL - an AI-powered narrative platform that solves
-                                the biggest problems in long-term AI roleplay. When I'm not coding,
-                                you'll find me experimenting with robotics, game development, or diving into AI research.
+                                Recognized with Presidential Academic Honors and accelerated 3 years in mathematics (Pre-AP Algebra II in 8th grade).
+                                I believe in creating tools that solve complex algorithmic and narrative challenges.
+                                Currently building CRISTOL - an AI-powered narrative platform with custom model fine-tunes that solve context collapse and loss of agency in long-term AI roleplay.
                             </p>
                         </div>
 
                         <div class="about-grid">
+                            <!-- Academic Honors Card -->
+                            <div class="about-card">
+                                <h3>{ 🎓 } ACADEMIC HONORS</h3>
+                                <ul>
+                                    <li>Presidential Academic Achievement Award</li>
+                                    <li>3 Consecutive Years of Straight A's (90%+)</li>
+                                    <li>3-Year Accelerated Math: Pre-AP Algebra II in 8th Grade</li>
+                                    <li>Completed Harvard CS50X at age 10</li>
+                                    <li>Horizons Equinox & Learn with Leaders Alum</li>
+                                </ul>
+                            </div>
+
                             <div class="about-card">
                                 <h3>{ * } WHAT DRIVES ME</h3>
                                 <ul>
                                     <li>Building things that don't exist yet</li>
+                                    <li>Fine-tuning & training domain-specific LLMs</li>
                                     <li>Solving real problems with code</li>
                                     <li>Pushing boundaries of what's possible</li>
-                                    <li>Learning something new every day</li>
                                     <li>Making tools people love to use</li>
                                 </ul>
                             </div>
@@ -1235,11 +1289,11 @@
                             <div class="about-card">
                                 <h3>{ ^_^ } INTERESTS</h3>
                                 <ul>
-                                    <li>Artificial Intelligence & LLMs</li>
-                                    <li>Game Development (Unreal Engine)</li>
+                                    <li>Artificial Intelligence & LLM Fine-Tuning</li>
+                                    <li>Game Development (Unreal Engine & Web)</li>
                                     <li>Robotics & Embedded Systems</li>
-                                    <li>Full-Stack Web Development</li>
-                                    <li>Sci-Fi Novels & World-Building</li>
+                                    <li>Full-Stack Web Architecture</li>
+                                    <li>Advanced Mathematics & Algorithms</li>
                                 </ul>
                             </div>
 
@@ -1247,9 +1301,9 @@
                                 <h3>{ >_ } GOALS</h3>
                                 <ul>
                                     <li>Launch CRISTOL to users worldwide</li>
-                                    <li>Build more autonomous robots</li>
-                                    <li>Contribute to open-source projects</li>
-                                    <li>Create immersive gaming experiences</li>
+                                    <li>Train & release open-weights narrative models</li>
+                                    <li>Build autonomous conversational robots</li>
+                                    <li>Excel in competitive mathematics & CS</li>
                                     <li>Inspire other young developers</li>
                                 </ul>
                             </div>
@@ -1258,10 +1312,10 @@
                                 <h3>{ ; ) } FUN FACTS</h3>
                                 <ul>
                                     <li>Completed Harvard's CS50X at age 10</li>
+                                    <li>Published model weights & fine-tunes on Hugging Face</li>
                                     <li>Built a full bank website before middle school</li>
-                                    <li>Fine-tuned Gemma 3 to emulate TV characters</li>
-                                    <li>Building a 4-wheel robot with conversational AI</li>
-                                    <li>Solo developer on a complex AI platform</li>
+                                    <li>Built a 4-wheel conversational AI robot</li>
+                                    <li>Solo developer on complex full-stack AI platforms</li>
                                 </ul>
                             </div>
                         </div>
@@ -1282,7 +1336,7 @@
                             </div>
                             <div class="project-content">
                                 <div class="project-label">
-                                    Current Focus | Age 12-13
+                                    Current Focus | Age 13
                                     <span class="status-badge status-active">IN DEVELOPMENT</span>
                                     <span class="status-badge status-private">PRIVATE</span>
                                 </div>
@@ -1291,18 +1345,99 @@
                                     A next-generation AI Game Master and collaborative fiction platform that solves
                                     Context Collapse and Loss of Player Agency in long-term AI roleplay.
                                     Features dynamic memory management, multiverse timelines, deep world-building tools,
-                                    and a complete token economy system. Currently in active development - not yet public.
+                                    custom model fine-tunes, and a complete token economy system.
                                 </p>
                                 <div class="project-links">
                                     <a href="#cristol" class="project-link">[ LEARN MORE ]</a>
+                                    <a href="https://huggingface.co/hamza-devcore/cristol-checkpoint" target="_blank" class="project-link">[ HF CHECKPOINT ]</a>
                                 </div>
                                 <div class="project-tech">
                                     <span class="project-tag">React/TypeScript</span>
                                     <span class="project-tag">Python Flask</span>
                                     <span class="project-tag">OpenRouter API</span>
+                                    <span class="project-tag">Fine-Tuned Checkpoint</span>
                                     <span class="project-tag">Redis</span>
                                     <span class="project-tag">SQLAlchemy</span>
                                     <span class="project-tag">LLM Engineering</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ventra (Learn with Leaders) -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                ⚡
+                            </div>
+                            <div class="project-content">
+                                <div class="project-label">
+                                    Learn with Leaders | Age 13
+                                    <span class="status-badge status-active">OPEN SOURCE</span>
+                                </div>
+                                <h3 class="project-name">Ventra</h3>
+                                <p class="project-desc">
+                                    AI-powered platform developed during the Learn with Leaders program at age 13, leveraging modern artificial intelligence architectures to deliver intelligent solutions and intuitive user interactions.
+                                </p>
+                                <div class="project-links">
+                                    <a href="https://github.com/hamzadevcore/ventra" target="_blank" class="project-link">[ GITHUB REPO ]</a>
+                                </div>
+                                <div class="project-tech">
+                                    <span class="project-tag">AI Engineering</span>
+                                    <span class="project-tag">Full Stack</span>
+                                    <span class="project-tag">Learn with Leaders</span>
+                                    <span class="project-tag">Python/JS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Jellovator (Horizons Equinox) -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                🕹️
+                            </div>
+                            <div class="project-content">
+                                <div class="project-label">
+                                    Horizons Equinox | Age 13
+                                    <span class="status-badge status-active">GAME DEV</span>
+                                </div>
+                                <h3 class="project-name">Jellovator</h3>
+                                <p class="project-desc">
+                                    Engaging video game developed during the Horizons Equinox program at age 13 featuring custom elevator mechanics, bouncy physics, character movement, and entertaining puzzle gameplay.
+                                </p>
+                                <div class="project-links">
+                                    <a href="https://github.com/hamzadevcore/jellovator" target="_blank" class="project-link">[ GITHUB REPO ]</a>
+                                </div>
+                                <div class="project-tech">
+                                    <span class="project-tag">Game Development</span>
+                                    <span class="project-tag">Horizons Equinox</span>
+                                    <span class="project-tag">Physics/Gameplay</span>
+                                    <span class="project-tag">Interactive</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gemma 3 Fine-tuning -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                🧠
+                            </div>
+                            <div class="project-content">
+                                <div class="project-label">
+                                    Fine-Tune | Age 12
+                                    <span class="status-badge status-active">OPEN WEIGHTS</span>
+                                </div>
+                                <h3 class="project-name">Gemma 3 Fine-Tuning (N-LoRA)</h3>
+                                <p class="project-desc">
+                                    Custom LoRA fine-tuning for Google's Gemma 3 language model to emulate nuanced television character personalities and dialogue styles with high behavioral fidelity. Model weights available on Hugging Face.
+                                </p>
+                                <div class="project-links">
+                                    <a href="https://huggingface.co/hamza-devcore/n-lora" target="_blank" class="project-link">[ HUGGING FACE ]</a>
+                                </div>
+                                <div class="project-tech">
+                                    <span class="project-tag">Gemma 3</span>
+                                    <span class="project-tag">LoRA / Peft</span>
+                                    <span class="project-tag">Hugging Face</span>
+                                    <span class="project-tag">LLM Fine-tuning</span>
+                                    <span class="project-tag">AI/ML</span>
                                 </div>
                             </div>
                         </div>
@@ -1382,7 +1517,7 @@
                                 </p>
                                 <div class="project-links">
                                     <span style="font-size: 0.88rem; color: var(--crt-dark-gray); padding: 0.5rem 1rem;">
-                                        [ Coming Soon ]
+                                        [ In Development ]
                                     </span>
                                 </div>
                                 <div class="project-tech">
@@ -1390,36 +1525,6 @@
                                     <span class="project-tag">TTS/STT</span>
                                     <span class="project-tag">LLM Integration</span>
                                     <span class="project-tag">Hardware</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Gemma 3 Fine-tuning -->
-                        <div class="project-card">
-                            <div class="project-image">
-                                🤖
-                            </div>
-                            <div class="project-content">
-                                <div class="project-label">
-                                    Experiment | Age 12
-                                    <span class="status-badge status-archive">ARCHIVED</span>
-                                </div>
-                                <h3 class="project-name">Gemma 3 Fine-Tuning</h3>
-                                <p class="project-desc">
-                                    Experimental project fine-tuning Google's Gemma 3 language model
-                                    to emulate characters from a television show using prompt engineering
-                                    and personality injection techniques. Model files no longer available.
-                                </p>
-                                <div class="project-links">
-                                    <span style="font-size: 0.88rem; color: var(--crt-dark-gray); padding: 0.5rem 1rem;">
-                                        [ Model Lost ]
-                                    </span>
-                                </div>
-                                <div class="project-tech">
-                                    <span class="project-tag">Gemma 3</span>
-                                    <span class="project-tag">LLM Fine-tuning</span>
-                                    <span class="project-tag">Prompt Engineering</span>
-                                    <span class="project-tag">AI/ML</span>
                                 </div>
                             </div>
                         </div>
@@ -1486,15 +1591,32 @@
                             <div class="timeline-dot"></div>
                             <div class="timeline-card">
                                 <div class="timeline-age">AGE 12</div>
-                                <div class="timeline-title">Gemma 3 + Robot Project</div>
+                                <div class="timeline-title">Gemma 3 Fine-Tuning & Robot Project</div>
                                 <div class="timeline-desc">
-                                    Fine-tuned LLMs for character emulation (archived). Started building autonomous robot with TTS/STT/AI integration (in progress).
+                                    Fine-tuned Gemma 3 (n-lora) for character dialogue emulation and released weights on Hugging Face. Began building autonomous 4-wheel conversational robot with TTS/STT.
                                 </div>
                                 <div class="tech-tags">
                                     <span class="tech-tag">Gemma 3</span>
+                                    <span class="tech-tag">Hugging Face</span>
                                     <span class="tech-tag">Robotics</span>
-                                    <span class="tech-tag">TTS/STT</span>
                                     <span class="tech-tag">AI/ML</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <div class="timeline-age">AGE 13 (ACADEMICS & PROGRAMS)</div>
+                                <div class="timeline-title">Presidential Honors, Horizons Equinox & Learn with Leaders</div>
+                                <div class="timeline-desc">
+                                    Awarded Presidential Academic Honors, 3 consecutive years of 90%+ A's, and accelerated 3 years into Pre-AP Algebra II. Built <strong>Jellovator</strong> at Horizons Equinox and <strong>Ventra</strong> with AI at Learn with Leaders.
+                                </div>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Presidential Award</span>
+                                    <span class="tech-tag">Pre-AP Algebra II</span>
+                                    <span class="tech-tag">Horizons Equinox</span>
+                                    <span class="tech-tag">Learn with Leaders</span>
                                 </div>
                             </div>
                         </div>
@@ -1502,15 +1624,15 @@
                         <div class="timeline-item">
                             <div class="timeline-dot" style="border-color: var(--crt-white);"></div>
                             <div class="timeline-card" style="border-color: var(--crt-light-gray);">
-                                <div class="timeline-age" style="color: var(--crt-white);">AGE 12-13</div>
-                                <div class="timeline-title" style="color: var(--crt-white);">CRISTOL Platform</div>
+                                <div class="timeline-age" style="color: var(--crt-white);">AGE 13 (CURRENT)</div>
+                                <div class="timeline-title" style="color: var(--crt-white);">CRISTOL Platform & Custom Checkpoints</div>
                                 <div class="timeline-desc">
-                                    Building sophisticated AI Game Master platform solving context collapse and loss of agency. Private project in active development.
+                                    Architecting CRISTOL, an advanced AI Game Master platform tackling context collapse and player agency with dynamic memory and custom fine-tuned checkpoints on Hugging Face.
                                 </div>
                                 <div class="tech-tags">
-                                    <span class="tech-tag" style="border-color: var(--crt-white); color: var(--crt-white);">React/TypeScript</span>
-                                    <span class="tech-tag" style="border-color: var(--crt-white); color: var(--crt-white);">Python Flask</span>
-                                    <span class="tech-tag" style="border-color: var(--crt-white); color: var(--crt-white);">OpenRouter API</span>
+                                    <span class="tech-tag" style="border-color: var(--crt-white); color: var(--crt-white);">CRISTOL Checkpoint</span>
+                                    <span class="tech-tag" style="border-color: var(--crt-white); color: var(--crt-white);">Hugging Face</span>
+                                    <span class="tech-tag" style="border-color: var(--crt-white); color: var(--crt-white);">React / Flask / LLMs</span>
                                 </div>
                             </div>
                         </div>
@@ -1518,7 +1640,7 @@
                 </section>
 
                 <!-- Featured Project Deep Dive -->
-                <section class="section featured-project" id="cistol">
+                <section class="section featured-project" id="cristol">
                     <h2 class="section-title">CRISTOL: DEEP DIVE</h2>
                     
                     <div class="project-grid">
@@ -1535,7 +1657,7 @@
                                     <li><strong style="color: var(--crt-light-gray);">Loss of Player Agency</strong> - AI starts speaking for the user</li>
                                 </ul>
                                 <p>
-                                    Uses custom engine with dynamic memory management for sagas spanning millions of words without degradation.
+                                    Uses a custom engine with dynamic memory management, multiverse node graphs, and specialized fine-tuned model checkpoints for sagas spanning millions of words without degradation.
                                 </p>
                             </div>
 
@@ -1583,8 +1705,8 @@
                                     <p>AI assistant suggests actions, proposes twists, helps generate OCs.</p>
                                 </div>
                                 <div class="feature-card">
-                                    <h5>> Multiplayer Uplink</h5>
-                                    <p>Secure sharing links. Read-Only or Full Collaboration modes.</p>
+                                    <h5>> Fine-Tuned Checkpoints</h5>
+                                    <p>Custom trained checkpoints tuned specifically for Game Master orchestration.</p>
                                 </div>
                             </div>
                         </div>
@@ -1617,10 +1739,10 @@
                                 <div class="stack-category">
                                     <h6>// AI Infrastructure</h6>
                                     <div class="stack-items">
+                                        <a href="https://huggingface.co/hamza-devcore/cristol-checkpoint" target="_blank" class="stack-item" style="border-color: var(--crt-light-gray); color: var(--crt-white);">HF Checkpoint ↗</a>
                                         <span class="stack-item">OpenRouter API</span>
                                         <span class="stack-item">Google Gemma</span>
                                         <span class="stack-item">xAI Grok</span>
-                                        <span class="stack-item">Deepseek</span>
                                         <span class="stack-item">Prompt Chaining</span>
                                     </div>
                                 </div>
@@ -1678,7 +1800,7 @@
                         <div class="skill-card">
                             <span class="skill-icon">{ ; ) }</span>
                             <div class="skill-name">AI/ML Engineering</div>
-                            <p>Fine-tuning models, prompt engineering, LLM integration, intelligent systems.</p>
+                            <p>Fine-tuning models, Hugging Face checkpoint deployment, prompt engineering, LLM integration.</p>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="88"></div>
                             </div>
@@ -1687,9 +1809,9 @@
                         <div class="skill-card">
                             <span class="skill-icon">{ >_< }</span>
                             <div class="skill-name">Game Development</div>
-                            <p>Creating immersive games with Unreal Engine, 3D environments, interactive mechanics.</p>
+                            <p>Creating immersive games with Unreal Engine, custom physics, 3D environments.</p>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-width="85"></div>
+                                <div class="skill-progress" data-width="86"></div>
                             </div>
                         </div>
 
@@ -1703,20 +1825,20 @@
                         </div>
 
                         <div class="skill-card">
+                            <span class="skill-icon">{ ∑ }</span>
+                            <div class="skill-name">Accelerated Mathematics</div>
+                            <p>Advanced algorithmic problem solving, Pre-AP Algebra II (3 years ahead).</p>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
                             <span class="skill-icon">{ O_O }</span>
                             <div class="skill-name">System Architecture</div>
                             <p>Designing scalable systems with caching, real-time communication, separation of concerns.</p>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="87"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-card">
-                            <span class="skill-icon">{ *_* }</span>
-                            <div class="skill-name">UI/UX Design</div>
-                            <p>Crafting interfaces with custom animations, drag-and-drop interactions, accessibility.</p>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="83"></div>
                             </div>
                         </div>
                     </div>
@@ -1728,7 +1850,7 @@
                     
                     <div class="contact-container">
                         <p class="contact-intro">
-                            Have questions about my projects? Want to collaborate? Just want to say hi?
+                            Have questions about my projects or fine-tunes? Want to collaborate? Just want to say hi?
                             Feel free to reach out - I'd love to hear from you!
                         </p>
 
@@ -1745,6 +1867,13 @@
                                 <span class="contact-icon">{ }</span>
                                 <div class="contact-label">GitHub</div>
                                 <div class="contact-value">@hamzadevcore</div>
+                            </a>
+
+                            <!-- Hugging Face -->
+                            <a href="https://huggingface.co/hamza-devcore" target="_blank" class="contact-card">
+                                <span class="contact-icon">🤗</span>
+                                <div class="contact-label">Hugging Face</div>
+                                <div class="contact-value">@hamza-devcore</div>
                             </a>
 
                             <!-- PythonAnywhere Site -->
@@ -1776,7 +1905,7 @@
                         <span class="footer-emote">( ? o ? )</span>
                         <p class="footer-text">
                             A passionate builder who started with colorful blocks and evolved into creating sophisticated AI platforms. 
-                            Every project is a stepping stone toward bigger ideas. Currently living in Cairo, Egypt.
+                            Every project is a stepping stone toward bigger ideas.
                         </p>
                         <p class="footer-text" style="margin-top: 0.8rem; font-size: 0.92rem;">
                             "The best way to predict the future is to invent it." - Alan Kay
@@ -1787,7 +1916,7 @@
                         </div>
                         
                         <p style="margin-top: 2rem; color: var(--crt-dark-gray); font-size: 0.82rem;">
-                            [ BUILT WITH PASSION BY HAMZA :: AGE 13 :: CAIRO, EGYPT ]
+                            [ BUILT WITH PASSION BY HAMZA :: AGE 13 ]
                         </p>
                     </div>
                 </footer>
